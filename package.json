@@ -1,5 +1,5 @@
 {
-  "name": "vscode-prodigy",
+	"name": "vscode-prodigy",
 	"displayName": "Prodigy",
 	"description": "A Visual Studio Code extension for annotating machine learning training sets using Prodigy",
 	"version": "0.0.1",
@@ -10,14 +10,14 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:vscode-prodigy.helloWorld"
+		"onCommand:vscode-prodigy.start"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "vscode-prodigy.helloWorld",
-				"title": "Hello World"
+				"command": "vscode-prodigy.start",
+				"title": "Open Prodigy"
 			}
 		]
 	},
