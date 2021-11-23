@@ -25,7 +25,7 @@
 			"properties": {
 				"vscode-prodigy.url": {
 					"type": "string",
-					"default": null,
+					"default": "http://localhost:8080",
 					"description": "Prodigy URL, useful if you're using a reverse proxy (e.g. https://prodigy.example.com)"
 				}
 			}
