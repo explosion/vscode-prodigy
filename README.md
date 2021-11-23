@@ -1,6 +1,16 @@
-# vscode-prodigy README
+# VS Code extension for the Prodigy annotation tool ✨
 
-This is the README for your extension "vscode-prodigy". After writing up a brief description, we recommend including the following sections.
+This repo contains a [VS Code](https://code.visualstudio.com/) extension for
+[Prodigy](https://prodi.gy), our scriptable annotation tool for creating
+training data for machine learning models. It lets you run Prodigy within a VS
+Code Panel, and annotate as you develop your models and applications. 
+
+In order to use this extension, you'll need a license for Prodigy&mdash;[see
+this page](https://prodi.gy/buy) for more details. For issues and questions,
+please use the [Prodigy Support Forum](https://support.prodi.gy/).  If you've
+found a bug, feel free to submit a [pull
+request](https://github.com/explosion/vscode-prodigy/pulls)
+
 
 ## Features
 
