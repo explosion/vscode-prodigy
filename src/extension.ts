@@ -25,8 +25,8 @@ export function activate(context: vscode.ExtensionContext) {
 		panel.webview.html = getProdigyContent(url);
 		// Setup icons
 		panel.iconPath = {
-			"dark": vscode.Uri.file(path.join(context.extensionPath, "assets", "prodigy_dark.svg")),
-			"light": vscode.Uri.file(path.join(context.extensionPath, "assets", "prodigy_light.svg"))
+			"dark": vscode.Uri.file(path.join(context.extensionPath, "resources", "prodigy_dark.png")),
+			"light": vscode.Uri.file(path.join(context.extensionPath, "resources", "prodigy_light.png"))
 		};
 	});
 
