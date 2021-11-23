@@ -71,4 +71,3 @@ code .
 * See the output of the test result in the debug console.
 * Make changes to `src/test/suite/extension.test.ts` or create new test files inside the `test/suite` folder.
   * The provided test runner will only consider files matching the name pattern `**.test.ts`.
-  * You can create folders inside the `test` folder to structure your tests any way you want.
