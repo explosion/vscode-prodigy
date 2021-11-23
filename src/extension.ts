@@ -1,7 +1,7 @@
 import path = require('path');
 import * as vscode from 'vscode';
 
-const defaultProdigyUrl = 'http://localhost:8080';
+const DEFAULT_URL = "http://localhost:8080";
 
 
 export function activate(context: vscode.ExtensionContext) {
@@ -19,7 +19,11 @@ export function activate(context: vscode.ExtensionContext) {
 				retainContextWhenHidden: true
 			}
 		);
-		panel.webview.html = getProdigyContent();
+
+		// Setup content
+		let url = vscode.workspace.getConfiguration("vscode-prodigy").get<string>("url", DEFAULT_URL);
+		panel.webview.html = getProdigyContent(url);
+		// Setup icons
 		panel.iconPath = {
 			"dark": vscode.Uri.file(path.join(context.extensionPath, "assets", "prodigy_dark.svg")),
 			"light": vscode.Uri.file(path.join(context.extensionPath, "assets", "prodigy_light.svg"))
@@ -30,7 +34,7 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 
-function getProdigyContent() {
+function getProdigyContent(url: string): string {
 	return `
 <!DOCTYPE html>
 	<html lang="en">
@@ -40,7 +44,7 @@ function getProdigyContent() {
 		<title>Prodigy</title>
 	</head>
 	<body>
-		<iframe src="${defaultProdigyUrl}" width="100%" height="100%" style="position: absolute;"></iframe>
+		<iframe src="${url}" width="100%" height="100%" style="position: absolute;"></iframe>
 	</body>
 	</html>`;
 }
