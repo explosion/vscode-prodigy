@@ -24,7 +24,7 @@ Start a Prodigy session in a terminal, e.g.:
 prodigy ner.manual my_set blank:en example/news_headlines.jsonl --label PERSON,ORG,PRODUCT
 ```
 
-In VS Code, open the Command Palette (<kbd>CTRL</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>)
+In VS Code, open the Command Palette (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>)
 and select `Open Prodigy`. Execute it, and you will have a new Prodigy panel on the side.
 
 ## ⚙ Configuration
