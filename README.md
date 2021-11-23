@@ -67,7 +67,7 @@ code .
 ### Run tests
 
 * Open the debug viewlet (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd> or <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd> on Mac) and from the launch configuration dropdown pick `Extension Tests`.
-* Press `F5` to run the tests in a new window with your extension loaded.
+* Press <kbd>F5</kbd> to run the tests in a new window with your extension loaded.
 * See the output of the test result in the debug console.
 * Make changes to `src/test/suite/extension.test.ts` or create new test files inside the `test/suite` folder.
   * The provided test runner will only consider files matching the name pattern `**.test.ts`.
