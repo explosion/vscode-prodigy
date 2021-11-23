@@ -19,7 +19,17 @@
 				"command": "vscode-prodigy.start",
 				"title": "Open Prodigy"
 			}
-		]
+		],
+		"configuration": {
+			"title": "Prodigy",
+			"properties": {
+				"vscode-prodigy.url": {
+					"type": "string",
+					"default": null,
+					"description": "Prodigy URL, useful if you're using a reverse proxy (e.g. https://prodigy.example.com)"
+				}
+			}
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
