@@ -1,70 +1,73 @@
-# vscode-prodigy README
+# VS Code extension for the Prodigy annotation tool ✨
 
-This is the README for your extension "vscode-prodigy". After writing up a brief description, we recommend including the following sections.
+This repo contains a [VS Code](https://code.visualstudio.com/) extension for
+[Prodigy](https://prodi.gy), our scriptable annotation tool for creating
+training data for machine learning models. It lets you run Prodigy within a VS
+Code Panel, and annotate as you develop your models and applications. 
 
-## Features
+In order to use this extension, you'll need a license for Prodigy&mdash;[see
+this page](https://prodi.gy/buy) for more details. For issues and questions,
+please use the [Prodigy Support Forum](https://support.prodi.gy/).  If you've
+found a bug, feel free to submit a [pull
+request](https://github.com/explosion/vscode-prodigy/pulls)
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
-For example if there is an image subfolder under your extension project workspace:
+## ⌛️ Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+Get from the [VS Code marketplace]()
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## 📋 Usage
 
-## Requirements
+Start a Prodigy session in a terminal, e.g.: 
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+```bash
+prodigy ner.manual my_set blank:en example/news_headlines.jsonl --label PERSON,ORG,PRODUCT
+```
 
-## Extension Settings
+In VS Code, open the Command Palette (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>)
+and select `Open Prodigy`. Execute it, and you will have a new Prodigy panel on the side.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
+## ⚙ Configuration
 
 This extension contributes the following settings:
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+| Configuration      | Description                                                                          |
+|--------------------|--------------------------------------------------------------------------------------|
+| vscode-prodigy.url | Set the URL where Prodigy is being served at. Useful when you're in a reverse proxy. |
 
-## Known Issues
+## 👩‍💻 Develop
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+You need [Visual Studio Code](https://code.visualstudio.com/) and
+[Typescript](https://www.typescriptlang.org/) for development. First, clone this
+repository:
 
-## Release Notes
+```bash
+git clone git@github.com:explosion/vscode-prodigy.git
+```
 
-Users appreciate release notes as you update your extension.
+and open the `vscode-prodigy` folder in Code:
 
-### 1.0.0
+```bash
+cd vscode-prodigy
+code .
+```
 
-Initial release of ...
+### Get up and running straight away
 
-### 1.0.1
+* Press <kbd>F5</kbd> to open a new window with your extension loaded.
+* Run your command from the command palette by pressing (<kbd>Ctrl</kbd>+</kbd>Shift</kbd>+<kbd>P</kbd> or <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> on Mac) and typing `Open Prodigy`.
+* Set breakpoints in your code inside `src/extension.ts` to debug your extension.
+* Find output from your extension in the debug console.
 
-Fixed issue #.
+### Make changes
 
-### 1.1.0
+* You can relaunch the extension from the debug toolbar after changing code in `src/extension.ts`.
+* You can also reload (<kbd>Ctrl</kbd>+<kbd>R</kbd> or <kbd>Cmd</kbd>+<kbd>R</kbd> on Mac) the VS Code window with your extension to load your changes.
 
-Added features X, Y, and Z.
+### Run tests
 
------------------------------------------------------------------------------------------------------------
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+* Open the debug viewlet (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd> or <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd> on Mac) and from the launch configuration dropdown pick `Extension Tests`.
+* Press <kbd>F5</kbd> to run the tests in a new window with your extension loaded.
+* See the output of the test result in the debug console.
+* Make changes to `src/test/suite/extension.test.ts` or create new test files inside the `test/suite` folder.
+  * The provided test runner will only consider files matching the name pattern `**.test.ts`.
