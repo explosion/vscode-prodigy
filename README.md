@@ -5,6 +5,8 @@ This repo contains a [VS Code](https://code.visualstudio.com/) extension for
 training data for machine learning models. It lets you run Prodigy within a VS
 Code Panel, and annotate as you develop your models and applications. 
 
+![](assets/preview.gif)
+
 In order to use this extension, you'll need a license for Prodigy&mdash;[see
 this page](https://prodi.gy/buy) for more details. For issues and questions,
 please use the [Prodigy Support Forum](https://support.prodi.gy/).  If you've
