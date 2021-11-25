@@ -1,17 +1,33 @@
 {
 	"name": "vscode-prodigy",
+	"publisher": "Explosion",
 	"displayName": "Prodigy",
 	"description": "A Visual Studio Code extension for annotating machine learning training sets using Prodigy",
+	"license": "See LICENSE IN LICENSE.md",
+	"icon": "resources/prodigy_light.png",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.62.0"
 	},
 	"categories": [
-		"Other"
+		"Data Science",
+		"Machine Learning"
 	],
+	"keywords": [
+		"Prodigy",
+		"Data annotation",
+		"spaCy",
+		"Natural Language Processing",
+		"Computer Vision"
+	],
+	"qna": "https://support.prodi.gy",
 	"activationEvents": [
 		"onCommand:vscode-prodigy.start"
 	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/explosion/vscode-prodigy.git"
+	},
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
