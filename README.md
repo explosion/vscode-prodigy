@@ -18,7 +18,7 @@ request](https://github.com/explosion/vscode-prodigy/pulls)
 
 ## ⌛️ Installation
 
-Get from the [VS Code marketplace]()
+Get from the [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=Explosion.vscode-prodigy)
 
 ## 📋 Usage
 
