@@ -5,7 +5,7 @@
 	"description": "A Visual Studio Code extension for annotating machine learning training sets using Prodigy",
 	"license": "See LICENSE IN LICENSE.md",
 	"icon": "resources/prodigy_light.png",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.62.0"
 	},
