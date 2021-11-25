@@ -1,5 +1,7 @@
 # VS Code extension for the Prodigy annotation tool ✨
 
+[![CI](https://github.com/explosion/vscode-prodigy/actions/workflows/ci.yml/badge.svg)](https://github.com/explosion/vscode-prodigy/actions/workflows/ci.yml)
+
 This repo contains a [VS Code](https://code.visualstudio.com/) extension for
 [Prodigy](https://prodi.gy), our scriptable annotation tool for creating
 training data for machine learning models. It lets you run Prodigy within a VS
